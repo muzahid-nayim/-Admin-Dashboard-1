@@ -1,0 +1,295 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+
+
+
+
+*{
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+    transition: all .3s;
+}
+
+
+.sider{
+    /* border: solid; */
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    background: rgb(240, 236, 236);
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #8d8d8d,
+         
+    -5px -5px 10px #ffffff;
+    transition: all .3s;
+    left: -350px;
+    z-index: 100;
+    transform: rotateX(50deg);
+
+}
+
+.profile-container{
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+    /* border: solid; */
+    margin-top: 50px;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0px;
+background: #e0e0e0;
+box-shadow:  5px 5px 10px #8d8d8d,
+             -5px -5px 10px #ffffff;
+}
+
+
+
+.profile-container img{
+    border-radius: 50%;
+   
+}
+
+
+.name-container p{
+    color: gray;
+
+}
+
+
+.sider-ul{
+ /* border: solid; */
+ width: 210px;
+ margin: 0 auto;
+ margin-top: 20px;
+ list-style: none;
+
+}
+
+.sider-ul li{
+    border-radius: 3px;
+background: #e0e0e0;
+box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+
+             margin: 20px 0;
+             padding: 15px 10px;
+}
+
+
+
+.list-text{
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+
+ label #more{
+    
+    font-size: 25px;
+    top: 10px;
+    transition: all .5s;
+    left: 5px;
+    margin: 5px;
+}
+
+
+#hide{
+    display: none;
+}
+
+
+
+
+ label #cancel{
+  position: fixed;
+    font-size: 25px;
+    z-index: 1000000000000;
+    transition: all .2s;
+    top: -30px;
+    left: 230px;
+   transform: rotate(90deg);
+
+}
+
+
+
+#hide:checked ~ .sider{
+    left: 0px;
+    transform: rotateX(0deg);
+}
+
+
+#hide:checked ~ label #more{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+#hide:checked ~ label #cancel{
+    left: 230px;
+    top: 10px;
+   transform: rotate(0deg);
+}
+
+
+/* ⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫⏫ */
+
+
+
+main{
+    /* border: solid; */
+    background: rgb(255, 253, 231);
+}
+
+
+.header{
+    width: 100%;
+    height: 50px;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #cfcfcf,
+                 -5px -5px 10px #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-content{
+margin-left: 5px;
+height: 100%;
+display: flex;
+/* justify-content: center; */
+align-items: center;
+
+
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+.title-section{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* background: red; */
+    align-items: center;
+    padding: 0 10px;
+}
+
+#title-home-icon{
+    color: white;
+    /* border: solid; */
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 5px;
+   margin-right: 5px;
+   background: linear-gradient(to right, rgb(212, 42, 255),rgb(125, 4, 136));
+}
+
+.dtitle span{
+    font-weight: 700;
+}
+
+.overview span{
+    font-weight: 700;
+}
+.overview i {
+  color: rgb(0, 68, 255);
+}
+
+
+
+
+
+.monitor-board{
+    display: flex;
+    /* border: solid; */
+    width: 98%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
+.item1,.item2,.item3{
+    width: 100%;
+    margin-top: 20px;
+    /* border: solid; */
+}
+
+
+
+
+
+
+
+
+.card{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    /* border: solid; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+
+.card1{
+    background: linear-gradient(to right, rgb(255, 174, 0),rgb(255, 0, 140));
+
+}
+
+.card2{
+    background: linear-gradient(to right, rgb(0, 225, 255),rgb(0, 81, 255));
+
+}
+
+
+.card3{
+    background: linear-gradient(to right, rgb(2, 250, 2),rgb(1, 102, 43));
+
+}
+
+
+
+
+.amount{
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.incress{
+    font-size: 14px;
+}
+
+.cardp{
+    font-weight: 600;
+   
+    
+}
