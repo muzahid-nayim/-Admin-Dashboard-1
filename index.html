@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <script src="https://kit.fontawesome.com/6510686742.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+
 
 </head>
 <body>
@@ -40,12 +45,13 @@
 
 
     <ul class="sider-ul">
-        <li><i class="fa-solid fa-house"> </i><span class="list-text">Home</span></li>
-        <li><i class="fa-solid fa-house"> </i><span class="list-text">Home</span></li>
-        <li><i class="fa-solid fa-house"> </i><span class="list-text">Home</span></li>
-        <li><i class="fa-solid fa-house"> </i><span class="list-text">Home</span></li>
-        <li><i class="fa-solid fa-house"> </i><span class="list-text">Home</span></li>
-        <li><i class="fa-solid fa-house"> </i><span class="list-text">Home</span></li>
+        <li><a href="#"><i class="fa-solid fa-house"> </i><span class="list-text">Home</span></a></li>
+        <li><a href="#"><i class="fa-sharp fa-solid fa-bell"></i><sup id="notification">35</sup><span class="list-text">Notification</span> </a></li>
+        <li><a href="#"><i class="fa-brands fa-app-store-ios"></i><span class="list-text">Apps</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-video"></i><span class="list-text">Video</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-thumbs-up"> </i><span class="list-text">Likes</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span class="list-text">Exit</span></a></li>
+        
         
        
     </ul>
@@ -61,6 +67,16 @@
 
         <label for="hide"><i id="more" class="fa-solid fa-bars"></i></label>
 
+
+        <div class="header-right">
+            <ul class="header-list">
+               
+                <li><a href="#"><i class="fa-solid fa-envelope"></i><sup id="notification">99+</sup></a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-bell"></i><sup id="notification">35</sup></a></li>
+                <li><a href="#"><i class="fa-solid fa-power-off"></i></a></li>
+                <li><a onclick="LightDark();" id="theme" href="#"><i class="fa-solid fa-circle-half-stroke"></i></a></li>
+            </ul>
+        </div>
         
 
         
@@ -98,33 +114,33 @@
 
   <div class="monitor-board">
 
-<div class="item1">
-    <div class="card card1">
-        <p class="cardp">Weekly sales</p>
-        <h3 class="amount">$ 15,0000</h3>
-        <p class="incress">incressed by 60%</p>
-    </div>
-</div>
+                    <div class="item1">
+                        <div class="card card1">
+                            <p class="cardp">Weekly sales</p>
+                            <h3 class="amount">$ 15,0000</h3>
+                            <p class="incress">incressed by 60%</p>
+                        </div>
+                    </div>
 
 
 
-<div class="item2">
-    <div class="card card2">
-        <p class="cardp">Weekly Orders</p>
-        <h3 class="amount"> 45,6334</h3>
-        <p class="incress">incressed by 10%</p>
-    </div>
-</div>
+                    <div class="item2">
+                        <div class="card card2">
+                            <p class="cardp">Weekly Orders</p>
+                            <h3 class="amount"> 45,6334</h3>
+                            <p class="incress">incressed by 10%</p>
+                        </div>
+                    </div>
 
 
 
-<div class="item3">
-    <div class="card card3">
-        <p class="cardp">Weekly Online</p>
-        <h3 class="amount"> 95,5741</h3>
-        <p class="incress">incressed by 5%</p>
-    </div>
-</div>
+                    <div class="item3">
+                        <div class="card card3">
+                            <p class="cardp">Weekly Online</p>
+                            <h3 class="amount"> 95,5741</h3>
+                            <p class="incress">incressed by 5%</p>
+                        </div>
+                    </div>
 
 
 
@@ -132,6 +148,26 @@
   <!-- MONITOR BOARD END -->
 
 
+
+  <div class="graph-container">
+
+
+
+            <div class="graph1 graph">
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            </div>
+
+
+
+                <div class="graph2 graph">
+                    <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+                </div>
+
+
+
+  </div>
+
+  <!-- GRAPH CONTAINER END  -->
 
 
 </div>
